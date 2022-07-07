@@ -1,0 +1,35 @@
+* {
+    margin:auto;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.H1-and-image{
+    text-align: center;
+}
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: none;
+    list-style-image: url();
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:pink;
+}
+a:active{
+    color:whitesmoke;
+}
