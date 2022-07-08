@@ -2,6 +2,12 @@
     margin:auto;
     width: 80%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffe0dd;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 3px #ecb9b4;
 }
 
 .H1-and-image{
@@ -16,6 +22,8 @@
 
 .categories h2{
     text-align: center;
+    color: white;
+    text-shadow: 2px 3px #ecb9b4;
 }
 
 .categories ul{
