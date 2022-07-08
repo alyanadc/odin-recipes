@@ -1,36 +1,37 @@
 * {
-    margin:auto;
-    width: 80%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #ffe0dd;
+    margin: 0;
+    padding: 0;
 }
-
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(253,222,219,0.8),rgba(253,222,219,0.8)),url('../images/master_chef.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 h1{
     color: white;
-    text-shadow: 2px 3px #ecb9b4;
+    font-size: 50px;
 }
-
-.H1-and-image{
-    text-align: center;
-}
-
-.categories {
-    border: 1px #ccc solid;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.categories h2{
-    text-align: center;
+.text-box{
+    width: 90%;
     color: white;
     text-shadow: 2px 3px #ecb9b4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
-
-.categories ul{
-    padding: 0;
-    list-style: none;
-    list-style-image: url();
-
+.top{
+    color:pink;
+    text-shadow: 2px 3px white;
+}
+.text-box p{
+    font-size: 20px;
+    margin: 10px 0 40px;
 }
 
 a{
@@ -38,8 +39,71 @@ a{
     color:black;
 }
 a:hover{
-    color:pink;
+    color:palevioletred;
 }
 a:active{
-    color:whitesmoke;
+    color:white;
+}
+
+/*----Recipes----*/
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.recipes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #ecb9b4;
+}
+.recipes p{
+    color:black;
+    margin: 10px;
+}
+
+.recipe{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.recipe img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.layer h3{
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(253,222,219,0.7);
 }
